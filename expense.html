@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE tracker APP</title>
+    <link rel="stylesheet" href="expense.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52c3d542f8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <div class="form-container">
+        <h2>Add A New Atem</h2>
+        <form action="" autocomplete="off">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Where was the expense made?">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            <label for="amount">Amount:</label>
+            <input type="text" name="amount" id="amount">
+            <button class="submit">Add Expense</button>
+        </form>
+    </div>
+
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col" class="trash"></th>
+                    </tr>
+                </thead>
+                <tbody class="elements">
+                    
+                </tbody>
+            </table>
+            <p class="empty">No expenses added yet !</p>
+        </div>
+
+
+
+    <script src="expense.js"></script>
+</body>
+</html>

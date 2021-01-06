@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:linear-gradient(120deg,rgb(36, 196, 224),rgb(9, 46, 148));
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling header */
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:20vh;
+}
+header h1 {
+    font-size:4rem;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+
+
+/* Styling form - div */
+
+.form-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.form-container h2 {
+    font-family: 'Itim', cursive;
+    min-height: 7vh;
+}
+form {
+    text-align:center;
+}
+form label {
+    font-size:1.2rem;
+    font-weight:700;
+    font-family:sans-serif;
+} 
+#name , #date , #amount  {
+    height:2.4rem;
+    border:1px solid gray;
+    border-radius:5px;
+    outline:none;
+    padding:0 0.5rem;
+    margin:0.5rem;
+    font-size:1.2rem;
+}
+#name {
+    width:90%;
+}
+#date {
+    width:40%;
+}
+#amount {
+    width:40%;
+}
+.submit {
+    font-size:1.1rem;
+    font-weight:500;
+    color:white;
+    height:2.7rem;
+    width:8.4rem;
+    background-color:rgb(0, 22, 145);
+    border:1px solid rgb(0, 67, 211);
+    border-radius:5px;
+    box-shadow: 0 0 10px 2px blue;
+    margin:1.5rem 0;
+    cursor:pointer;
+    outline:none;
+    transition:all 400ms ease;
+}
+.submit:hover {
+    background-color:rgb(44, 72, 235);
+    box-shadow: 0 0 10px 2px rgb(0, 22, 145);
+}
+
+
+/* Stylin tabel */
+
+#table-container {
+    min-height:5.5rem;
+    min-width:30rem;
+    max-width:60rem;
+    background-color:rgb(206, 206, 206);
+    border:3px solid gray;
+}
+
+table {
+    min-width:70%;
+    max-width:100%;
+    background-color:gray;
+    font-family:sans-serif;
+}
+table thead tr th {
+    background:rgb(247, 246, 246);
+    height:2.4rem;
+    min-width: 15rem;
+    text-align:left;
+    padding:0 1rem;
+}
+table thead tr .trash {
+    min-width:5rem;
+}
+
+table tbody tr td {
+    background-color:rgb(206, 206, 206);
+    width:100%;     
+    border-bottom:1px solid white;
+    padding:0.8rem 0.4rem;
+}
+table tbody tr {
+    border:1px solid white;
+}
+table tbody tr td button {
+    border:none;
+    padding:0.5rem;
+    cursor:pointer;
+    margin:0 1rem;
+    transition:background 400ms ease;
+}
+table tbody tr td button:hover {
+    background-color:rgb(245, 168, 168);
+}
+table tbody tr td button i {
+    color:red;
+    font-size:1rem;
+    pointer-events: none;
+}
+
+.empty {
+    padding:1rem;
+    font-family:sans-serif;
+    font-weight:500;
+}
